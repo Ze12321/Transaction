@@ -1,0 +1,84 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+	line-height: 20px;
+}
+body{
+	background: url(../../image/69ac66df78213c0a20e420278b4a13ff.jpg) no-repeat;
+	
+	}
+#top {
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	background:rgba(231,231,231,0.2);
+	margin-top: 100px;
+	border: none;
+    border-radius:25px;
+-moz-border-radius:25px; /* Old Firefox */
+}
+#register {
+	width: 525px;
+	margin: 0 auto;
+	padding:20px;
+	
+}
+.hr_1 {
+	font-size: 30px;
+	font-weight: bold;
+	color: #000;
+	height: 35px;
+	vertical-align: bottom;
+	padding-left: 210px;
+	margin-bottom: 15px;
+}
+#register dl {
+	clear: both;
+	height: 50px;
+}
+#register dl dt img{
+	margin:-13px;}
+#register dl dt {
+	text-align: right;
+	width: 80px;
+	height: 25px;
+	padding:0px 10px 10px 10px;;
+	margin:10px 10px 10px 50px;
+	float: left;
+}
+#register dl dd {
+	float: left;
+}
+#register dl dd input:not(.btn) {
+	width: 220px;
+	height: 30px;
+	background:rgba(231,231,231,0);
+	border: none;
+	padding-bottom: 5px;
+    border-bottom:  1px solid #000;
+}
+#register dl dd button{
+	width:300px;
+	height:40px;
+	border:none;
+	background: #09F;
+	margin-left:90px;
+	font-size: 20px;
+	font-family: "黑体" ;
+	letter-spacing:10px;
+	border-radius:25px;
+}
+#register dl dd button:hover{
+	background: #F90;
+	border:none;
+}
+#register dl dd button:active{
+	background:#09f;
+	border:none;
+}
+.a{
+	margin-left:100px;
+}
+.b{
+	margin-left:100px}

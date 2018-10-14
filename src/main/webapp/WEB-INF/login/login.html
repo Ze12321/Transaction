@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/Transaction/login/bootstrap-3.3.7/css/css.css"/>
+<link rel="stylesheet" type="text/css" href="/Transaction/login/bootstrap-3.3.7/css/bootstrap.min.css"/>
+<script type="text/javascript" src="/Transaction/login/bootstrap-3.3.7/js/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="/Transaction/login/bootstrap-3.3.7/js/bootstrap.js"></script>
+<script type="text/javascript" src="/Transaction/login/bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function () {
+        $("#button").click(function(){
+            $.post('/Transaction/admin/login',$("#form").serialize(),function(data){
+                data.status==undefined?alert("请求出错！"):data.status==false?alert("登录失败！"):location.href='/Transaction/Backstage/index.html';
+            });
+        });
+    })
+</script>
+
+<title>登录</title>
+</head>
+
+<body>
+<div id="top">
+<section id="register">
+	<form action="" id="form">
+		<h1 class="hr_1">登陆</h1>
+		<dl>
+			<dt><img src="/Transaction/login/image/register.jpg" style="width:30px; height:30px;"/></dt>
+			<dd><input id="user" name="name" type="text" placeholder="账号"  /> </dd>
+		</dl>
+		<dl>
+			<dt><img src="/Transaction/login/image/密码 (2).png"  style="width:30px; height:30px;" /></dt>
+			<dd><input id="pwd" name="password" type="password" placeholder="请输入密码"  /></dd>
+		</dl>
+        <dl>
+        <dd class="a"><img src="/Transaction/login/image/注册.png" style="width:30px; height:30px;"/>注册</dd>
+        <dd class="b"><img src="/Transaction/login/image/忘记密码.png" style="width:30px; height:30px;"/>忘记密码</dd>
+        </dl>
+        <dl>
+			<dd class=""><button type="button" id="button">确认</button></dd>
+		</dl>
+	</form>
+</section>
+</div>
+</body>
+</html>

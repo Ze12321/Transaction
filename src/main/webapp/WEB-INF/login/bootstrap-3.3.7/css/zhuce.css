@@ -1,0 +1,117 @@
+/* 登录样式 */
+@charset "UTF-8";
+* {
+	box-sizing: border-box;
+	font-size: 14px;
+	font-style: normal;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+button {
+	cursor: pointer;
+}
+.signin {
+	background-image: url(../../image/69ac66df78213c0a20e420278b4a13ff.jpg );
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	background-position: top center;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+}
+.signin .container {
+	left: 50%;
+	background: rgba(255,255,255,0.2);
+	border-radius: 25px;
+	margin-bottom: 120px;
+	margin-left: -240px;
+	margin-top: -288px;
+	padding: 30px;
+	position: fixed;
+	text-align: center;
+	top: 50%;
+	width: 480px;
+}
+.signin .container .title {
+	display: block;
+	font-size: 18px;
+	margin: 5px;
+}
+.signin .container .form {
+	text-align: center;
+}
+.signin .container input {
+	background-color: #fff;
+	background-position: 10px 6px;
+	background-repeat: no-repeat;
+	border: none;
+	border-radius: 3px;
+	margin: 6px 0;
+	padding: 9px 40px;
+}
+.signin .container input.phone {
+	background-image: url(../../image/phone.png);
+}
+.signin .container input.password {
+	background-image: url(../images/password.png);
+}
+.signin .container input.captcha {
+	background-image: url(../images/code.png);
+	display: inline-block;
+	padding-right: 10px;
+	width: 150px;
+}
+.signin .container button.captcha-btn {
+	display: inline-block;
+	margin: 6px 0;
+	width: 100px;
+}
+.signin .container button {
+	background-color: #0FF;
+	border: none;
+	border-radius: 3px;
+	color: #000;
+	display: block;
+	margin: 12px auto;
+	padding: 9px 10px;
+	width: 262px;
+}
+.signin .container .treaty {
+	margin: 10px auto 0 auto;
+	text-align: left;
+	color: #F60;
+	width: 250px;
+}
+.signin .container .ext {
+	display: inline-block;
+	margin: 6px 0 48px 0;
+	width: 250px;
+}
+.signin .container .ext .signup {
+	color: #e95f22;
+	float: left;
+}
+.signin .container .ext .backpass {
+	color: #666;
+	float: right;
+}
+.signin .footer {
+	background: #f1f1f1;
+	border-top: 1px solid #ccc;
+	bottom: 0;
+	color: #000;
+	height: 40px;
+	left: 0;
+	position: fixed;
+	right: 0;
+	text-align: center;
+}
+.signin .footer p {
+	text-align: center;
+	padding: 9px 18px;
+	width: 100%;
+}

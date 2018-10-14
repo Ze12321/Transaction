@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/zhuce.css"/>
+<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7/css/bootstrap.min.css"/>
+<script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="bootstrap-3.3.7/js/jquery-3.3.1.js"></script>
+<title>注册</title>
+</head>
+
+<body class="signin">
+<div class="container" style="top: 40%;">
+  <label class="title">用户注册</label>
+  <form id="customerReset" method="post" class="form">
+    <ul>
+      <li>
+        <input id="user" type="text" class="phone" placeholder="昵称" required pattern="[a-zA-Z][a-zA-Z0-9]{3,15}">
+        <i id="c_usernameError"></i></li>
+        <li>
+        <input id="user" type="text" class="phone" placeholder="姓名" required pattern="[a-zA-Z][a-zA-Z0-9]{3,15}">
+        <i id="c_usernameError"></i></li>
+        <li>
+        <input id="" name="" class="phone" type="text" placeholder="请输入您所在学校" required pattern="\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?">
+        <i id="c_emailError"></i></li>
+      <li>
+       <li>
+        <input id="" name="" class="phone" type="text" placeholder="请输入您的地址" required pattern="\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?">
+        <i id="c_emailError"></i></li>
+      <li>
+      <li>
+        <input id="" name="" class="phone" type="text" placeholder="请输入您的班级" required pattern="\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?">
+        <i id="c_emailError"></i></li>
+        <li>
+        <input id="" name="" class="phone" type="text" placeholder="请输入学号" required pattern="\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?">
+        <i id="c_emailError"></i></li>
+      <li>
+        <input id="c_password" name="c_password" class="phone" type="password" placeholder="请输入您的登录密码" required  pattern="[a-zA-Z0-9]{4,10}" >
+        <i id="c_passwordError"></i></li>
+      <li>
+        <input id="c_nickName" name="confirmPassword" class="phone" type="password" placeholder="请再次输入登陆密码" required  pattern="[a-zA-Z0-9]{4,10}">
+        <i id="c_nickNameError"></i></li>
+      <li>
+        <input id="c_telephone" name="c_telephone" class="phone" type="text" placeholder="请输入您的手机号码" required pattern="1\d{10}">
+        <i id="c_telephoneError"></i></li>
+      <li>
+        <input id="c_email" name="c_email" class="phone" type="text" placeholder="请输入您的邮箱" required pattern="\w+@\w+.[a-zA-Z]{2,3}(.[a-zA-Z]{2,3})?">
+        <i id="c_emailError"></i></li>
+      <li>
+         <input class="captcha" type="text" placeholder="请输入验证码" required pattern="/^[\s\S]*.*[^\s][\s\S]*$/">
+        <button class="captcha-btn">发送验证码</button>
+      </li>
+    </ul>
+    <div class="treaty">《校园二手商城用户协议》</div>
+    <button id="customerReset_Button" class="btn" type="submit">同意以上协议并注册</button>
+  </form>
+  <div class="ext"> <a class="signup" href="">已有账号?立即登录</a> </div>
+</div>
+<div class="footer">
+  <p>(c) 版权所有 2017校园二手交易网 技术支持</p>
+</div>
+</body>
+</html>
